@@ -2,13 +2,11 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import joblib
-from tensorflow.keras.models import load_model
 
 # -------------------------
 # Load model and data
 # -------------------------
 
-model = load_model("lstm_model.h5", compile=False)
 
 scaler = joblib.load("scaler.pkl")
 
